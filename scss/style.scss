@@ -37,7 +37,7 @@
     }
 }
 
-@include gridify(2, 400);
+@include gridify(2, 300);
 @include gridify(4, 600);
 
 /**
@@ -86,8 +86,10 @@ img {max-width:100%;}
 body {
     transition: opacity .25s ease;
     ul{
-    position: absolute;
-        top:20%}
+        transition:all 1s;
+        position: absolute;
+        margin-top:20% 
+    }
     audio{
         // position: absolute;
         // left:0px;
@@ -114,6 +116,50 @@ body {
     }
     .hidden{
         display:none
+    }
+    ul{
+        // float:left;
+        width:20%;
+        font-size:15px;
+        border:1px solid black;
+        border-radius: 5px;
+    }
+    li{
+        cursor:pointer;
+        margin-right:10px
+    }
+    img{
+        width:100px;
+        height:100px;
+        float:right;
+        &::after{clear:both}
+    }
+    h3{
+        float:left
+        // &::after{clear:both}
+    }
+    .trackTitle{
+        font-size: 12px
+    }
+
+    span{
+        border:1px solid black;
+        border-radius: 5px;
+        padding:3px;
+        margin-right: 5px
+    }
+    .player{
+        // float:left;
+        position: absolute;
+        // display:inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+        width: 70%;
+        overflow:hidden;
+        padding:20px;
+        border:1px solid black;
+        cursor:default
     }
 }
 

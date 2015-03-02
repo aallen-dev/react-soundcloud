@@ -835,8 +835,8 @@ abbr[title]:hover {
     content: "";
     font-size: medium; }
 
-@media only screen and (min-width: 400px) {
-  .grid-2-400 > * {
+@media only screen and (min-width: 300px) {
+  .grid-2-300 > * {
     width: 48%; } }
 
 @media only screen and (min-width: 600px) {
@@ -890,8 +890,10 @@ body {
   -webkit-transition: opacity .25s ease;
           transition: opacity .25s ease; }
   body ul {
+    -webkit-transition: all 1s;
+            transition: all 1s;
     position: absolute;
-    top: 20%; }
+    margin-top: 20%; }
   body audio {
     width: 100%; }
   body input[type=text] {
@@ -914,4 +916,42 @@ body {
               transform: translateX(-50%); }
   body .hidden {
     display: none; }
+  body ul {
+    width: 20%;
+    font-size: 15px;
+    border: 1px solid black;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+  body li {
+    cursor: pointer;
+    margin-right: 10px; }
+  body img {
+    width: 100px;
+    height: 100px;
+    float: right; }
+    body img::after {
+      clear: both; }
+  body h3 {
+    float: left; }
+  body .trackTitle {
+    font-size: 12px; }
+  body span {
+    border: 1px solid black;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    padding: 3px;
+    margin-right: 5px; }
+  body .player {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    width: 70%;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid black;
+    cursor: default; }
 
