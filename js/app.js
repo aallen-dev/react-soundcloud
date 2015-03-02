@@ -22,20 +22,36 @@ function app(){
         // {url: "./bower_components/parse-js-sdk/lib/parse.min.js"},
 
         // when using React (and the plugin JSnoX), uncomment the following two lines
-        // {url: "./bower_components/react/react.min.js"},
-        // {url: "./bower_components/jsnox/index.js"},
+        {url: "./bower_components/react/react.min.js"},
+        {url: "./bower_components/jsnox/index.js"},
 
         // other stuff
         {url: "./bower_components/pace/pace.min.js"},
+
+        {url: "//connect.soundcloud.com/sdk.js"},
+        {url: "./js/player.js"},
         {url: "./js/TemplateView.js"}
     ).then(function(){
-        // if turning on JSnoX, uncommment the following line
-        // window.d = jsnox(React);
         // if turning on React, uncomment the following line
-        // React.initializeTouchEvents(true);
+        React.initializeTouchEvents(true);
 
         document.querySelector("html").style.opacity = 1;
         // start app?
+        
     })
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
